@@ -98,14 +98,23 @@ document.querySelectorAll('.js-add-to-cart').forEach((button) => {
 cartQuantity();
 
 
-function addedText(){
-  
-  document.querySelectorAll('.js-add-to-cart').forEach((button)=>{
-    button.addEventListener('click', ()=>{
-      document.querySelector('.js-product-spacer').innerHTML = `<div class= "js-added">Added To Cart</div>`;
-    })
-  })
+function addedText() {
+  document.querySelectorAll('.js-add-to-cart').forEach((button) => {
+    button.addEventListener('click', () => {
+      // Find the closest parent with class product
+      const productContainer = button.closest('.product-container'); 
+      
+      // Find the js-product-spacer within that parent
+      const productSpacer = productContainer.querySelector('.js-product-spacer');
 
+      document.querySelectorAll('.js-product-spacer').forEach((element)=>{
+        element.innerHTML='';
+      });
+      
+      // Update the HTML of the product spacer
+      productSpacer.innerHTML = '<div class="js-added">Added</div>';
+    });
+  });
 }
 
 addedText();

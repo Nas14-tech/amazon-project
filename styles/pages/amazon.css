@@ -160,12 +160,9 @@
   border: none;
   background-color: green;
   width: 50%;
-  padding: 3px;
-  font-family: 'Courier New', Courier, monospace;
+  padding: 6px 0px;
+  font-family: 'Times New Roman', Times, serif;
   text-align: center;
   border-radius: 10px;
-  font-size: 12px;
-  position: relative;
-  /* display: flex; */
-
+  font-size: 15px;
 }
