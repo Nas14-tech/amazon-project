@@ -56,7 +56,7 @@
 
 .payment-summary {
   padding-bottom: 5px;
-  overflow-x: scroll;
+  overflow-x: hidden;
 }
 
 @media (max-width: 1000px) {
@@ -67,7 +67,7 @@
       the HTML. grid-row overrides this default ordering). */
     grid-row: 1;
     margin-bottom: 12px;
-    overflow-x: scroll;
+    overflow-x: hidden;
   }
 }
 
