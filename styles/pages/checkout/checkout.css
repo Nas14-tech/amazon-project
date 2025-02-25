@@ -48,7 +48,7 @@
   border-radius: 4px;
   padding: 18px;
   margin: 0;
-  width: 100%;
+  width: auto;
 }
 
 .cart-item-container {
@@ -57,9 +57,11 @@
 
 .payment-summary {
   padding-bottom: 5px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .payment-summary {
     /* grid-row: 1 means this element will be placed into row
       1 in the grid. (Normally, the row that an element is
@@ -67,13 +69,10 @@
       the HTML. grid-row overrides this default ordering). */
     grid-row: 1;
     margin-bottom: 12px;
-    width: auto;
-
+    max-width: auto;
   }
 
-  /* .cart-item-container{
-    width: auto;
-  } */
+ 
 }
 
 .delivery-date {
